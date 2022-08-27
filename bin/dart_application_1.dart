@@ -169,6 +169,10 @@ void main() {
   *Null-aware spread operator (...?)
   */
 
+  //final 
+  //final variable can't be re-assigned but can still modify contents.
+
+
   //late
   //late means that Dart doesn’t initialize the variable
   //right away. It only initializes it when you access it the first
