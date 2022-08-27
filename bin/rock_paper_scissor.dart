@@ -2,10 +2,11 @@ import 'dart:io';
 import 'dart:math';
 
 enum Move { Rock, Paper, Scissor }
+
 void main() {
   final random = Random();
   while (true) {
-    stdout.write('Rock,Paper or Scissor? (r,p,s)');
+    stdout.write('Rock,Paper or Scissor? (r,p,s) : Press \'q\' to quit ');
     final userInput = stdin.readLineSync();
     var userMove;
     if (userInput == 'r' || userInput == 'p' || userInput == 's') {
