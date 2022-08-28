@@ -201,8 +201,10 @@ void main() {
    * .remove('key');
    * .keys to access only Keys
    * .values to access only Values
+   * .entries
    * .containsKey('key') to check whether a key is in a map
    * .containsValue(23)
+   * 
    * 
    * .toSet()
    * .toList()
