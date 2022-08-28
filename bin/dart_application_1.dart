@@ -218,6 +218,13 @@ void main() {
    * 
    * 
   */
+
+
+  /**
+   * Generic Type
+   * 
+   * put DATA Type after Function's Name
+   */
   final myInfo = {
     'name': 'GODEYE',
     'profession': 'nothing',
