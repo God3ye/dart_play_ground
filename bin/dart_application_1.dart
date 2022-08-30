@@ -1,7 +1,9 @@
 import 'dart:math';
 
 const globalConst = 'G';
+
 enum Weather { cloudy, sunny, rainy, snowy }
+
 const globalNumList = [1, 2, 3, 4, 5];
 const paragraphOfText = 'Once upon a time there was a Dart programmer who '
     'had a challenging challenge to solve. Though the challenge was great, '
@@ -169,9 +171,8 @@ void main() {
   *Null-aware spread operator (...?)
   */
 
-  //final 
+  //final
   //final variable can't be re-assigned but can still modify contents.
-
 
   //late
   //late means that Dart doesn’t initialize the variable
@@ -218,7 +219,6 @@ void main() {
    * 
    * 
   */
-
 
   /**
    * Generic Type
@@ -319,6 +319,14 @@ class User {
   User(this.id, this.name);
   final int id;
   final String name;
+
+  @override
+  bool operator ==(Object object) {
+    if (object is User) {
+      return id == object.id && name == object.name;
+    }
+    return false;
+  }
 }
 
 class Fruit {
@@ -353,4 +361,3 @@ IntTransform toTwice(IntTransform f) {
     return f(f(x));
   };
 }
-
