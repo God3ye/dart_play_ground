@@ -320,12 +320,16 @@ class User {
   final int id;
   final String name;
 
-  @override
+  /* @override
   bool operator ==(Object object) {
     if (object is User) {
       return id == object.id && name == object.name;
     }
     return false;
+  } */
+  @override
+  bool operator ==(covariant User object) {
+    return id == object.id && name == object.name;
   }
 }
 
